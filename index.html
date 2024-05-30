@@ -38,8 +38,8 @@
                     </ul>
 
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 bg-light" placeholder="Search" aria-label="Pesquise">
-                        <button class="btn btn-secondary" type="submit">Pesquise</button>
+                        <input class="form-control me-2 bg-light" placeholder="Pesquise" aria-label="Pesquise">
+                        <button class="btn btn-secondary" type="submit">Pesquisar</button>
                     </form>
 
                 </div>
@@ -215,13 +215,36 @@
 
     </div>
 
-    <div class="d-grid gap-2 col-6 mx-auto mt-5 mb-5">
-        <button class="btn btn-primary shadow-lg" type="button">Realizar Pedido</button>
+    <!-- Button trigger modal -->
+    <div class="area-botao d-flex justify-content-center mt-5 mb-5">
+        <button type="button" class="btn btn-outline-primary shadow-lg w-75" onclick="calc()" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Realizar Pedido
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel">Total do Pedido: </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="output">
+                    <!--TEXTO AQUI-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
