@@ -22,7 +22,7 @@ function calc() {
     });
 
 
-    output.innerHTML += `<p id="aprensentacaoNome"><b>Caro</b> ${client}</br></br>Seguem os dados do seu pedido.</br></br>O seu pedido é:</br></br></p>`;
+    output.innerHTML += `<p id="aprensentacaoNome"><b>Caro</b> ${client}</br>Seguem os dados do seu pedido.</br>O seu pedido é:</br></p>`;
 
     for (var input of quantities) {
         var id = input.id;
